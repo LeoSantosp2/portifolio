@@ -1,7 +1,17 @@
 import React from 'react';
 
+import GlobalStyled from './styles/GlobalStyled';
+import Header from './components/header';
+import Main from './components/main';
+
 function App() {
-    return <h1>Hello World</h1>;
+    return (
+        <>
+            <GlobalStyled />
+            <Header />
+            <Main />
+        </>
+    );
 }
 
 export default App;
