@@ -57,7 +57,7 @@ export default function Aside() {
 
                     <button>Enviar</button>
 
-                    <input type="hidden" name="_next" value="https://leosantosp2.github.io/portifolio/"></input>
+                    <input type="hidden" name="_next" value="https://leosantosp2.github.io/Portifolio/"></input>
                 </form>
             </TalkToMe>
         </Container>
