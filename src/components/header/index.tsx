@@ -16,8 +16,8 @@ export default function Header() {
             <div className="menu">
                 <nav>
                     <a href="#">Página inicial</a>
-                    <a href="#">Sobre Mim</a>
-                    <a href="#">Fale Comigo</a>
+                    <a href="#about-me">Sobre Mim</a>
+                    <a href="#talkToMe">Fale Comigo</a>
                 </nav>
             </div>
         </Container>
