@@ -1,39 +1,24 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-import { motion } from 'framer-motion';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import { Container, ContainerProfile, ContainerKnowlegge } from './styled';
+import { Container, ContainerKnowlegge } from './styled';
 
 export default function Main() {
-    const slides = useRef<HTMLDivElement>(null);
-    const nav = useRef<HTMLDivElement>(null);
-
-    const createDiv = () => {
-        if (null !== slides.current) {
-            for (let i = 0; i < slides.current?.childElementCount; i++) {
-                const div = document.createElement('div');
-
-                div.id = String(i);
-
-                nav.current?.appendChild(div);
-            }
-
-            document.getElementById('0')?.classList.add('current');
-        }
-    };
-
-    setTimeout(() => {
-        if (nav.current?.childElementCount === slides.current?.childElementCount) return;
-        createDiv();
-    }, 1);
     return (
         <Container>
-            <ContainerProfile>
-                <div ref={slides} className="containerProfile">
-                    <div className="aboutMe slide" id="about-me">
+            <CarouselProvider
+                naturalSlideWidth={100}
+                naturalSlideHeight={20}
+                totalSlides={4}
+                className="containerProfile"
+            >
+                <Slider>
+                    <Slide index={0} className="aboutMe" id="about-me">
                         <h1>Sobre Mim</h1>
 
-                        <div className="lists">
+                        <div className="contents">
                             <p>
                                 Olá, tudo bem? Me chamo <strong>Leonardo</strong> e tenho <strong>22 anos</strong>!
                                 Atualmente, trabalho como <strong>NOC (Network Operation Center)</strong> na empresa{' '}
@@ -42,12 +27,12 @@ export default function Main() {
                                 melhorar meus conhecimentos, visando sempre o crescimento entre mim e a empresa.
                             </p>
                         </div>
-                    </div>
+                    </Slide>
 
-                    <div className="formation slide">
+                    <Slide index={1} className="formation">
                         <h1>Formação</h1>
 
-                        <div className="lists">
+                        <div className="contents">
                             <ul>
                                 <h3>Análise e Desenvolvimento de Sistemas</h3>
                                 <li>Faculdade das Américas - Graduação</li>
@@ -60,12 +45,12 @@ export default function Main() {
                                 <li>Fevereiro 2019 - Abril 2020</li>
                             </ul>
                         </div>
-                    </div>
+                    </Slide>
 
-                    <div className="experience slide">
+                    <Slide index={2} className="experience">
                         <h1>Experiências</h1>
 
-                        <div className="lists">
+                        <div className="contents">
                             <ul>
                                 <h3>Analista de Suporte</h3>
                                 <li>Eoncoop - Autônomo</li>
@@ -78,23 +63,99 @@ export default function Main() {
                                 <li>Desde Novembro 2022</li>
                             </ul>
                         </div>
-                    </div>
+                    </Slide>
 
-                    <div className="projects slide">
+                    <Slide index={3} className="projects">
                         <h1>Projetos</h1>
-                    </div>
-                </div>
 
-                <AiOutlineArrowLeft className="arrowLeft" size={24} />
-                <AiOutlineArrowRight className="arrowRight" size={24} />
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://leosantosp2.github.io/curiosidade-tecnologia"
+                                    target={'_blank'}
+                                    rel="noreferrer"
+                                >
+                                    Curiosidade Tecnologia
+                                </a>
+                            </li>
 
-                <div ref={nav} className="nav"></div>
-            </ContainerProfile>
+                            <li>
+                                <a href="https://leosantosp2.github.io/projeto-enel" target={'_blank'} rel="noreferrer">
+                                    Projeto Enel
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://leosantosp2.github.io/projeto-cordel"
+                                    target={'_blank'}
+                                    rel="noreferrer"
+                                >
+                                    Projeto Cordel
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://leosantosp2.github.io/nft" target={'_blank'} rel="noreferrer">
+                                    NFT
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://leosantosp2.github.io/calculadora" target={'_blank'} rel="noreferrer">
+                                    Calculadora
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://leosantosp2.github.io/formulario" target={'_blank'} rel="noreferrer">
+                                    Formulário
+                                </a>
+                            </li>
+                        </ul>
+                    </Slide>
+                </Slider>
+
+                <ButtonBack className="arrowLeft button">
+                    <AiOutlineArrowLeft size={28} />
+                </ButtonBack>
+                <ButtonNext className="arrowRight button">
+                    <AiOutlineArrowRight size={28} />
+                </ButtonNext>
+            </CarouselProvider>
 
             <ContainerKnowlegge>
                 <h1>Conhecimentos</h1>
 
-                <table></table>
+                <div className="contents">
+                    <table>
+                        <tr>
+                            <td className="td-01">
+                                HTML5/CSS3 <br /> Básico
+                            </td>
+                            <td>
+                                JavaScript <br /> Intermediário
+                            </td>
+                            <td className="td-03">
+                                TypeScript <br /> Básico
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="td-04">
+                                Python 3 <br /> Básico
+                            </td>
+                            <td>
+                                Português <br /> Nativo
+                            </td>
+                            <td>
+                                Inglês <br /> Básico
+                            </td>
+                            <td className="td-07">
+                                Pacote Office <br /> Básico
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </ContainerKnowlegge>
         </Container>
     );
