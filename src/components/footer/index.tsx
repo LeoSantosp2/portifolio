@@ -51,7 +51,11 @@ export default function Footer() {
                 </div>
             </SocialMedias>
             <Curriculo>
-                <a href="curriculo/Curriculo.pdf" target={'_blank'}>
+                <a
+                    href="https://leosantosp2.github.io/curriculo/curriculo/Curr%C3%ADculo.pdf"
+                    target={'_blank'}
+                    rel="noreferrer"
+                >
                     Faça Download do Meu Currículo
                 </a>
                 <p>
