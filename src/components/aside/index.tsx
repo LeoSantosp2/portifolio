@@ -28,7 +28,6 @@ export default function Aside() {
                         type="text"
                         name="name"
                         className="name"
-                        size={30}
                         maxLength={30}
                         placeholder="Nome Completo"
                         autoComplete="off"
@@ -39,21 +38,13 @@ export default function Aside() {
                         type="email"
                         name="email"
                         className="email"
-                        size={30}
                         maxLength={30}
                         placeholder="E-mail"
                         autoComplete="off"
                         required={true}
                     />
 
-                    <textarea
-                        name="msg"
-                        className="msg"
-                        cols={45}
-                        rows={7}
-                        placeholder="Digite sua mensagem"
-                        required={true}
-                    ></textarea>
+                    <textarea name="msg" className="msg" placeholder="Digite sua mensagem" required={true}></textarea>
 
                     <button>Enviar</button>
 

@@ -14,9 +14,11 @@ export default function Main() {
                 totalSlides={4}
                 className="containerProfile"
             >
-                <Slider>
+                <Slider className="slider">
                     <Slide index={0} className="aboutMe" id="about-me">
-                        <h1>Sobre Mim</h1>
+                        <div className="title">
+                            <h1>Sobre Mim</h1>
+                        </div>
 
                         <div className="contents">
                             <p>
@@ -30,7 +32,9 @@ export default function Main() {
                     </Slide>
 
                     <Slide index={1} className="formation">
-                        <h1>Formação</h1>
+                        <div className="title">
+                            <h1>Formação</h1>
+                        </div>
 
                         <div className="contents">
                             <ul>
@@ -48,7 +52,9 @@ export default function Main() {
                     </Slide>
 
                     <Slide index={2} className="experience">
-                        <h1>Experiências</h1>
+                        <div className="title">
+                            <h1>Experiências</h1>
+                        </div>
 
                         <div className="contents">
                             <ul>
@@ -66,53 +72,69 @@ export default function Main() {
                     </Slide>
 
                     <Slide index={3} className="projects">
-                        <h1>Projetos</h1>
+                        <div className="title">
+                            <h1>Projetos</h1>
+                        </div>
 
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://leosantosp2.github.io/curiosidade-tecnologia"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Curiosidade Tecnologia
-                                </a>
-                            </li>
+                        <div className="contents">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/curiosidade-tecnologia"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Curiosidade Tecnologia
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="https://leosantosp2.github.io/projeto-enel" target={'_blank'} rel="noreferrer">
-                                    Projeto Enel
-                                </a>
-                            </li>
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/projeto-enel"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Projeto Enel
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a
-                                    href="https://leosantosp2.github.io/projeto-cordel"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Projeto Cordel
-                                </a>
-                            </li>
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/projeto-cordel"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Projeto Cordel
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="https://leosantosp2.github.io/nft" target={'_blank'} rel="noreferrer">
-                                    NFT
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="https://leosantosp2.github.io/nft" target={'_blank'} rel="noreferrer">
+                                        NFT
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="https://leosantosp2.github.io/calculadora" target={'_blank'} rel="noreferrer">
-                                    Calculadora
-                                </a>
-                            </li>
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/calculadora"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Calculadora
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="https://leosantosp2.github.io/formulario" target={'_blank'} rel="noreferrer">
-                                    Formulário
-                                </a>
-                            </li>
-                        </ul>
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/formulario"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Formulário
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </Slide>
                 </Slider>
 
@@ -127,7 +149,7 @@ export default function Main() {
             <ContainerKnowlegge>
                 <h1>Conhecimentos</h1>
 
-                <div className="contents">
+                <div className="contents-ability">
                     <table>
                         <tr>
                             <td className="td-01">

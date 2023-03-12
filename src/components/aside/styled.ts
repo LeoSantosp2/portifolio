@@ -16,6 +16,10 @@ export const Container = styled.aside`
     h1 {
         margin: 25px 0px;
     }
+
+    @media all and (max-width: 450px) {
+        display: block;
+    }
 `;
 
 export const ContactsData = styled.div`
@@ -37,6 +41,13 @@ export const ContactsData = styled.div`
     .contents p {
         margin: 20px 0px;
     }
+
+    @media all and (max-width: 450px) {
+        .contents {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
 `;
 
 export const TalkToMe = styled.div`
@@ -50,6 +61,7 @@ export const TalkToMe = styled.div`
 
     .form input,
     textarea {
+        width: 300px;
         margin: 10px;
         padding: 5px;
         border: none;
@@ -64,6 +76,10 @@ export const TalkToMe = styled.div`
         }
     }
 
+    .form textarea {
+        height: 150px;
+    }
+
     .form button {
         width: 70px;
         height: 30px;
@@ -75,6 +91,13 @@ export const TalkToMe = styled.div`
 
         :hover {
             border: 1px solid ${colors.color01};
+        }
+    }
+
+    @media all and (max-width: 450px) {
+        .form input,
+        textarea {
+            width: 250px;
         }
     }
 `;

@@ -12,6 +12,10 @@ export const Container = styled.footer`
     div {
         width: 100%;
     }
+
+    @media all and (max-width: 450px) {
+        display: block;
+    }
 `;
 
 export const SocialMedias = styled.div`
@@ -36,6 +40,22 @@ export const SocialMedias = styled.div`
         list-style: none;
         columns: 2;
     }
+
+    @media all and (max-width: 450px) {
+        padding-left: 25px;
+
+        h3 {
+            margin: 0px;
+            padding-top: 20px;
+            padding-bottom: 7px;
+            font-size: 16px;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
 `;
 
 export const Curriculo = styled.div`
@@ -56,5 +76,12 @@ export const Curriculo = styled.div`
     p {
         font-style: italic;
         font-size: 13px;
+    }
+
+    @media all and (max-width: 450px) {
+        a,
+        p {
+            font-size: 12px;
+        }
     }
 `;

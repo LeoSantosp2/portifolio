@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { Container } from './styled';
 
@@ -15,9 +16,9 @@ export default function Header() {
 
             <div className="menu">
                 <nav>
-                    <a href="#">Página inicial</a>
-                    <a href="#about-me">Sobre Mim</a>
-                    <a href="#talkToMe">Fale Comigo</a>
+                    <AnchorLink href="#">Página inicial</AnchorLink>
+                    <AnchorLink href="#about-me">Sobre Mim</AnchorLink>
+                    <AnchorLink href="#talkToMe">Fale Comigo</AnchorLink>
                 </nav>
             </div>
         </Container>

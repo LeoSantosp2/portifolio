@@ -59,4 +59,15 @@ export const Container = styled.header`
             font-size: 30px;
         }
     }
+
+    @media all and (max-width: 400px) {
+        .perfil h1 {
+            font-size: 23px;
+        }
+
+        .menu nav {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
 `;
