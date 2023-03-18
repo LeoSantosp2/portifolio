@@ -133,6 +133,32 @@ export default function Main() {
                                         Formulário
                                     </a>
                                 </li>
+
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/Lista-de-tarefas"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Lista de Tarefas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="https://leosantosp2.github.io/Lista-de-tarefas-2.0"
+                                        target={'_blank'}
+                                        rel="noreferrer"
+                                    >
+                                        Lista de Tarefas 2.0
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://leosantosp2.github.io/pomodoro" target={'_blank'} rel="noreferrer">
+                                        Pomodoro
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </Slide>
