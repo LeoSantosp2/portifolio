@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*Big Tablets*/
+@media all and (max-width: 900px){
+  header{
+    display: block;
+  }
+
+  .menu{
+    justify-content: left;
+  }
+
+  .menu nav{
+    padding: 10px 0px;
+  }
+
+  aside{
+    display: block;
+  }
+}
+
+/*Small Tablets*/
+@media all and (max-width: 650px){
+  .skills table{
+    width: 400px;
+    height: 350px;
+  }
+
+  .curriculo a{
+    font-size: var(--small);
+  }
+}
+
+/*Smartphones*/
+@media all and (max-width: 450px){
+  .menu nav{
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills table{
+    width: 300px;
+    height: 250px;
+  }
+
+  .curriculo{
+    text-align: center;
+  }
+
+  .curriculo a{
+    font-size: var(--superSmall);
+  }
+}
