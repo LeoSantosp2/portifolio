@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*list of colors*/
+:root{
+  --primary: #172026;
+  --secondary: #04BFAD;
+  --baby-blue: #5FCDD9;
+  --white: #F2F2F2;
+  --black: #000000;
+}
+
+/*size fonts*/
+:root{
+  --superSmall: 1.5rem;
+  --small: 1.7rem;
+  --medium: 2rem;
+  --large: 2.7rem;
+  --superLarge: 5rem
+}
+
+@media screen and (max-width: 745px){
+  main{
+    display: block;
+  }
+
+  main .contact{
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 545px){
+  .form{
+    display: block;
+    text-align: center;
+  }
+
+  form .send-message label{
+    padding-left: 30px;
+  }
+
+  form .send-message input{
+    width: 90%;
+  }
+
+  form textarea{
+    width: 90%;
+    margin: auto;
+  }
+}
