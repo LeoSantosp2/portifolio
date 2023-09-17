@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*list of colors*/
+:root{
+  --primary: #172026;
+  --secondary: #04BFAD;
+  --baby-blue: #5FCDD9;
+  --white: #F2F2F2;
+  --black: #000000;
+}
+
+/*size fonts*/
+:root{
+  --superSmall: 1.5rem;
+  --small: 1.7rem;
+  --medium: 2rem;
+  --large: 2.7rem;
+  --superLarge: 5rem
+}
+
+@media screen and (max-width: 745px){
+  main .content{
+    text-align: justify;
+    flex-direction: column;
+  }
+
+  main .content .photo img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  main .content .card{
+    margin: 10px 0px;
+  }
+
+  main .experience{
+    font-size: var(--superSmall);
+  }
+
+  main .experience .left{
+    padding: 0px 10px;
+  }
+
+  main .experience .left p{
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  main .title h1{
+    margin-left: 10px;
+  }
+
+  main .experience{
+    width: 100%;
+  }
+
+  main .experience .explain{
+    width: 150px;
+    height: auto;
+  }
+}
