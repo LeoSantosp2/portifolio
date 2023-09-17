@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*list of colors*/
+:root{
+  --primary: #172026;
+  --secondary: #04BFAD;
+  --baby-blue: #5FCDD9;
+  --white: #F2F2F2;
+  --black: #000000;
+}
+
+/*size fonts*/
+:root{
+  --superSmall: 1.5rem;
+  --small: 1.7rem;
+  --medium: 2rem;
+  --large: 2.7rem;
+  --superLarge: 5rem
+}
+
+/*style header*/
+header{
+  width: 100%;
+  height: 15vh;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+header a{
+  font-size: var(--small);
+}
+
+header .back{
+  color:var(--white);
+}
+
+/*style main*/
+main{
+  width: 100%;
+  background-color: var(--primary);
+}
+
+main .title{
+  margin-bottom: 100px;
+  padding-left: 15px;
+}
+
+main .title h1{
+  font-weight: 400;
+  font-size: var(--superLarge);
+  color: var(--secondary);
+}
+
+main .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .card{
+  width: 250px;
+  height: 355px;
+  margin: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+}
+
+main .card .head{
+  width: 249px;
+  height: 124px;
+  padding: 15px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--secondary);
+}
+
+main .card .head i{
+  color: var(--primary);
+}
+
+main .card .head h2{
+  margin-top: 25px;
+  font-size: var(--medium);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+main .card{
+  text-align: center;
+}
+
+main .card p{
+  margin-top: 30%;
+  padding: 0px 10px;
+  font-size: var(--medium);
+  color: var(--white);
+}
