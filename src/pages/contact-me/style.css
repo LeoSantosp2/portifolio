@@ -56,16 +56,11 @@ main .form, main .contact{
   align-items: center;
 }
 
-.send-message{
+form{
   position: relative;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-}
-
-form .send-message label{
+form .label-name{
   position: absolute;
   top: 0%;
   left: 0%;
@@ -76,14 +71,32 @@ form .send-message label{
   color: var(--secondary);
 }
 
-form .send-message input:focus~label,
-form .send-message input:valid~label{
+form .label-email{
+  position: absolute;
+  top: 18%;
+  left: 0%;
+  padding: 10px;
+  font-size: var(--small);
+  pointer-events: none;
+  transition: 0.5s;
+  color: var(--secondary);
+}
+
+form .input-name:focus~.label-name,
+form .input-name:valid~.label-name{
   top: -20px;
   left: 0px;
   font-size: var(--superSmall);
 }
 
-form .send-message input{
+form .input-email:focus~.label-email,
+form .input-email:valid~.label-email{
+  top: 40px;
+  left: 0px;
+  font-size: var(--superSmall);
+}
+
+form input{
   width: 400px;
   height: 35px;
   margin-bottom: 30px;
