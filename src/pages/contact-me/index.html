@@ -17,21 +17,19 @@
   <main>
     <div class="form">
       <form action="https://formsubmit.co/leogilberto2010@hotmail.com" method="post">
-        <div class="send-message">
+        <input type="text" id="input-name" name="name" class="input-name" required>
+          <label for="input-name" class="label-name">Nome Completo</label>
+
+          <br>
+
+          <input type="email" name="email" id="input-email" class="input-email" required>
+          <label for="input-email" class="label-email">E-mail</label>
+
+          <br>
   
-          <input type="text" id="input-name" class="input-name" required>
-          <label for="input-name">Nome Completo</label>
-        
-        </div>
-  
-        <div class="send-message">
-  
-          <input type="email" id="input-email" class="input-email" required>
-          <label for="input-email">E-mail</label>
-  
-        </div>
-  
-          <textarea placeholder="Escreva sua mensagem"></textarea>
+          <textarea placeholder="Escreva sua mensagem" name="message"></textarea>
+
+          <br>
   
           <button>Enviar</button>
 
