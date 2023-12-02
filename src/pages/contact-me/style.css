@@ -84,7 +84,7 @@ form .label-email{
 
 form .input-name:focus~.label-name,
 form .input-name:valid~.label-name{
-  top: -20px;
+  top: -25px;
   left: 0px;
   font-size: var(--superSmall);
 }
