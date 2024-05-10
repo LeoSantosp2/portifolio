@@ -1,3 +1,4 @@
 # Portfólio
 
-Meu portfório feito em HTML, CSS e JavaScript
+## About
+My portfolio made with `HTML5`, `CSS3` and `JavaScript`.
