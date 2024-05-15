@@ -106,6 +106,7 @@ main .informations h1{
 main .informations p{
   font-size: var(--small);
   font-weight: 400;
+  text-align: justify;
 }
 
 main .informations nav{
