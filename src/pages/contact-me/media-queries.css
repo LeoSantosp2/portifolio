@@ -34,11 +34,22 @@
     text-align: center;
   }
 
-  form .send-message label{
-    padding-left: 30px;
+  form .label-name,
+  form .label-email{
+    left: 5%;
   }
 
-  form .send-message input{
+  form .input-name:focus~.label-name,
+  form .input-name:valid~.label-name{
+    left: 5%;
+  }
+
+  form .input-email:focus~.label-email,
+  form .input-email:valid~.label-email{
+    left: 5%;
+  }
+
+  form input{
     width: 90%;
   }
 
