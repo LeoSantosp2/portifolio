@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 /*list of colors*/
-:root{
-  --primary: #172026;
-  --secondary: #04BFAD;
-  --baby-blue: #5FCDD9;
-  --white: #F2F2F2;
+:root {
+  --bgColor: #F2F2F2;
+  --white: #FFFFFF;
   --black: #000000;
 }
 
 /*size fonts*/
-:root{
+:root {
   --superSmall: 1.5rem;
   --small: 1.7rem;
   --medium: 2rem;
@@ -19,136 +17,137 @@
 }
 
 /*style header*/
-header{
+header {
   width: 100%;
   height: 15vh;
-  padding: 0px 25px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  padding: 0 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary);
+  background-color: var(--bgColor);
 }
 
-header a{
+header a {
   font-size: var(--small);
 }
 
-header .back{
-  color:var(--white);
+header .back {
+  transition: all 0.3s ease;
+  color: var(--black);
+}
+
+header .back:hover {
+  opacity: 0.8;
 }
 
 /*style main*/
-main{
-  background-color: var(--primary);
+main {
+  background-color: var(--bgColor);
   overflow: hidden;
 }
 
-main > div{
+main>div {
   width: 100%;
   height: auto;
-  margin-bottom: 100px ;
+  margin-bottom: 10rem;
   transition: 1.5s;
 }
 
-main .hidden{
+main .hidden {
   margin-left: -100%;
 }
 
-main .hidden-right{
+main .hidden-right {
   margin-left: 100%;
 }
 
-main .show{
+main .show {
   margin-left: 0%;
 }
 
-main .title h1{
-  margin-bottom: 35px;
-  margin-left: 20px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+main .title h1 {
+  margin-bottom: 3.5rem;
+  margin-left: 2rem;
   font-size: var(--superLarge);
-  color: var(--secondary);
+  color: var(--black);
   font-weight: 400;
 }
 
-main .content{
-  padding: 0px 10px;
+main .content {
+  padding: 0 1rem;
   display: flex;
 }
 
-main .content div{
+main .content div {
   width: 100%;
 }
 
-main .content .photo{
+main .content .photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .content .photo img{
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+main .content .photo img {
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-main .content .about{
+main .content .about {
   line-height: 1.5em;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
   font-size: var(--small);
   display: flex;
   align-items: center;
-  color: var(--white);
+  color: var(--black);
 }
 
-main .content .card{
-  margin: 0px 10px;
-  border: 1px solid var(--secondary);
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+main .content .card {
+  margin: 0 1rem;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
   text-align: center;
 }
 
-main .content .card h2{
-  line-height: 2em;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+main .content .card h2 {
+  line-height: 5rem;
   font-size: var(--medium);
   font-weight: 400;
-  color: var(--secondary);
+  color: var(--black);
 }
 
-main .content .head{
-  margin-bottom: 50px;
-  padding: 10px 0px;
-  background-color: var(--secondary);
-  color: var(--primary);
+main .content .head {
+  margin-bottom: 5rem;
+  padding: 1rem 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-main .content .head h2{
-  color: var(--primary);
+main .content .head h2 {
+  color: var(--white);
 }
 
-main .experiencies .content{
+main .experiencies .content {
   display: flex;
   flex-direction: column;
 }
 
-main .experience{
-  margin-top: 50px;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+main .experience {
+  margin-top: 5rem;
   display: flex;
   font-size: var(--small);
-  color: var(--white);
+  color: var(--black);
 }
 
-main .experience .left p{
+main .experience .left p {
   margin-left: 40%;
 }
 
-main .experience .bold{
+main .experience .bold {
   font-weight: bold;
 }
 
-main .experience .explain{
-  width: 353px;
-  height: 87px;
+main .experience .explain {
+  width: 35.3rem;
+  height: 8.7rem;
 }

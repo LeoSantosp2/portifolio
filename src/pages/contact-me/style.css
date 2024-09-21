@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 /*list of colors*/
-:root{
-  --primary: #172026;
-  --secondary: #04BFAD;
-  --baby-blue: #5FCDD9;
-  --white: #F2F2F2;
+:root {
+  --bgColor: #F2F2F2;
+  --white: #FFFFFF;
   --black: #000000;
 }
 
 /*size fonts*/
-:root{
+:root {
   --superSmall: 1.5rem;
   --small: 1.7rem;
   --medium: 2rem;
@@ -19,145 +17,152 @@
 }
 
 /*style header*/
-header{
+header {
   width: 100%;
   height: 15vh;
-  padding: 0px 25px;
+  padding: 0 2.5rem;
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: var(--primary);
-  color:var(--white);
+  background-color: var(--bgColor);
 }
 
-header h1{
+header h1 {
   font-size: var(--large);
   font-weight: 400;
 }
 
-header a{
+header a {
+  transition: all 0.3s ease;
   font-size: var(--small);
-  color:var(--white);
+  color: var(--black);
 }
 
-main{
+header a:hover {
+  opacity: 0.8;
+}
+
+main {
   height: 85vh;
   display: flex;
-  background-color: var(--primary);
+  background-color: var(--bgColor);
 }
 
-main .form, main .contact{
+main .form,
+main .contact {
   width: 100%;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-form{
+form {
   position: relative;
 }
 
-form .label-name{
+form .label-name {
   position: absolute;
   top: 0%;
   left: 0%;
-  padding: 10px;
+  padding: 1rem;
   font-size: var(--small);
   pointer-events: none;
   transition: 0.5s;
-  color: var(--secondary);
+  color: var(--black);
 }
 
-form .label-email{
+form .label-email {
   position: absolute;
   top: 18%;
   left: 0%;
-  padding: 10px;
+  padding: 1rem;
   font-size: var(--small);
   pointer-events: none;
   transition: 0.5s;
-  color: var(--secondary);
+  color: var(--b);
 }
 
 form .input-name:focus~.label-name,
-form .input-name:valid~.label-name{
-  top: -25px;
-  left: 0px;
+form .input-name:valid~.label-name {
+  top: -2.5rem;
+  left: 0;
   font-size: var(--superSmall);
 }
 
 form .input-email:focus~.label-email,
-form .input-email:valid~.label-email{
-  top: 40px;
-  left: 0px;
+form .input-email:valid~.label-email {
+  top: 4rem;
+  left: 0;
   font-size: var(--superSmall);
 }
 
-form input{
-  width: 400px;
-  height: 35px;
-  margin-bottom: 30px;
-  padding: 10px;
-  border: 0px;
-  border-bottom: 1px solid var(--secondary);
+form input {
+  width: 40rem;
+  height: 3.5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 0;
+  border-bottom: 0.1rem solid var(--black);
   font-size: var(--small);
   outline: none;
   background-color: transparent;
-  color: var(--white);
+  color: var(--black);
 }
 
-form textarea{
-  width: 400px;
-  height: 156px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--secondary);
+form textarea {
+  width: 40rem;
+  height: 15.6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--black);
   font-size: var(--small);
   outline: none;
+  resize: none;
   background-color: transparent;
-  color: var(--white);
+  color: var(--black);
 }
 
-form textarea::placeholder{
-  color: var(--secondary);
+form textarea::placeholder {
+  color: var(--black);
 }
 
-form button{
-  width: 200px;
-  height: 35px;
-  margin: 20px auto;
-  border-radius: 5px;
-  border: 0px;
+form button {
+  width: 20rem;
+  height: 3.5rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--black);
   transition: 0.5s;
   font-size: var(--small);
   outline: none;
   cursor: pointer;
-  background-color: var(--secondary);
-  color: var(--primary);
+  background-color: var(--bgColor);
+  color: var(--black);
 }
 
-form button:hover{
-  opacity: 0.8;
+form button:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact p{
+.contact p {
   font-size: var(--medium);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
+  color: var(--black);
 }
 
-.contact p i{
-  margin-right: 5px;
+.contact p i {
+  margin-right: 0.5rem;
 }

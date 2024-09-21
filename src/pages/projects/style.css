@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 /*list of colors*/
-:root{
-  --primary: #172026;
-  --secondary: #04BFAD;
-  --baby-blue: #5FCDD9;
-  --white: #F2F2F2;
+:root {
+  --bgColor: #F2F2F2;
+  --white: #FFFFFF;
   --black: #000000;
 }
 
 /*size fonts*/
-:root{
+:root {
   --superSmall: 1.5rem;
   --small: 1.7rem;
   --medium: 2rem;
@@ -19,69 +17,75 @@
 }
 
 /*style header*/
-header{
+header {
   width: 100%;
   height: 15vh;
-  padding: 0px 25px;
+  padding: 0 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary);
+  background-color: var(--bgColor);
 }
 
-header a{
+header a {
   font-size: var(--small);
 }
 
-header .back{
-  color:var(--white);
+header .back {
+  transition: all 0.3s ease;
+  color: var(--black);
+}
+
+header .back:hover {
+  opacity: 0.8;
 }
 
 /*style main*/
-main{
-  background-color: var(--primary);
+main {
+  background-color: var(--bgColor);
 }
 
-main .content{
+main .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-main .card{
-  width: 350px;
-  height: 402px;
-  margin: 10px;
-  border: 1px solid var(--secondary);
-  border-radius: 5px;
+main .card {
+  width: 35rem;
+  height: 40.2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
-main .head{
-  height: 108px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+main .head {
+  height: 10.8rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   font-size: var(--small);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary);
+  background-color: var(--black);
+  color: var(--white);
 }
 
-main .card p{
-  width: 240px;
-  height: 100px;
-  padding: 0px 10px;
-  line-height: 1.2em;
+main .card p {
+  width: 24rem;
+  height: 10rem;
+  padding: 0 1rem;
+  line-height: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--small);
-  color: var(--white);
+  color: var(--black);
 }
 
-main .card a{
+main .card a {
   position: absolute;
   bottom: 2%;
   left: 50%;

@@ -1,16 +1,7 @@
 @charset "UTF-8";
 
-/*list of colors*/
-:root{
-  --primary: #172026;
-  --secondary: #04BFAD;
-  --baby-blue: #5FCDD9;
-  --white: #F2F2F2;
-  --black: #000000;
-}
-
 /*size fonts*/
-:root{
+:root {
   --superSmall: 1.5rem;
   --small: 1.7rem;
   --medium: 2rem;
@@ -19,11 +10,11 @@
 }
 
 @media screen and (max-width: 754px) {
-  main .title{
-    margin-bottom: 30px;    
+  main .title {
+    margin-bottom: 3rem;
   }
 
-  main .title h1{
+  main .title h1 {
     font-size: var(--large);
   }
 }
