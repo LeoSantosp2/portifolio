@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 /*list of colors*/
-:root{
-  --primary: #172026;
-  --secondary: #04BFAD;
-  --baby-blue: #5FCDD9;
-  --white: #F2F2F2;
+:root {
+  --bgColor: #F2F2F2;
+  --white: #FFFFFF;
   --black: #000000;
 }
 
 /*size fonts*/
-:root{
+:root {
   --superSmall: 1.5rem;
   --small: 1.7rem;
   --medium: 2rem;
@@ -19,102 +17,109 @@
 }
 
 /*style header*/
-header{
+header {
   width: 100%;
   height: 15vh;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary);
+  background-color: var(--bgColor);
 }
 
-header nav{
+header nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header nav i{
-  margin: 0px 25px;
-  color: var(--baby-blue);
+header nav i {
+  margin: 0 2.5rem;
+  color: var(--black);
 }
 
-header nav .icons .close-sidebar{
+header nav .icons .close-sidebar {
   display: none;
 }
 
-header nav a{
-  margin: 0px 10px;
+header nav a {
+  margin: 0 1rem;
   font-size: var(--small);
-  color: var(--white);
+  color: var(--black);
 }
 
-header .contact{
-  padding-right: 25px;
+header nav a:hover {
+  opacity: 0.8;
+}
+
+header .contact {
+  padding-right: 2.5rem;
   display: flex;
   align-items: center;
 }
 
 /*style main*/
-main{
+main {
   height: 85vh;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
   display: flex;
-  background-color: var(--primary);
+  background-color: var(--bgColor);
 }
 
-main .header{
-  padding-top: 10px;
-  padding-left: 15px;
+main .header {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
   display: none;
 }
 
-main > div{
+main>div {
   width: 100%;
 }
 
-main .photo{
+main .photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .photo img{
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+main .photo img {
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-main .informations{
-  padding: 0px 20px;
+main .informations {
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--white);
+  color: var(--black);
 }
 
-main .informations h2{
-  margin-bottom: 5px;
-  font-size: var(--medium);
-  font-weight: 400;
+main .informations h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3.7rem;
+  font-weight: 600;
 }
 
-main .informations h1{
-  margin-bottom: 15px;
-  font-size: var(--large);
-  font-weight: 400;
+main .informations h3 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-main .informations p{
+main .informations p {
   font-size: var(--small);
   font-weight: 400;
   text-align: justify;
 }
 
-main .informations nav{
-  padding: 15px 0px;
+main .informations nav {
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
 }
 
-main .informations nav .social-medias i{
-  color: var(--secondary);
+main .informations nav .social-medias i {
+  transition: all 0.3s ease;
+  color: var(--black);
+}
+
+main .informations nav .social-medias i:hover {
+  opacity: 0.8;
 }
